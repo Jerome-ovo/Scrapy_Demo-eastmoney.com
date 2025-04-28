@@ -15,25 +15,18 @@ Run *** stocks_info/stocks_info/spiders/__init__.py *** to run the entire projec
 
 # 🧠 Details
 下面对于项目细节进行说明：
-## StockSpider类中，定义方法：
-### def __init__(self) 
-  进行初始化
-### def start_requests(self) 
-  开始发送请求
-### def close_ad(self) 
-  负责关闭最开始访问页面时弹出的广告（可根据实际情况调整/删除）
-### def parse(self, response) 
-  解析页面数据，分页读取并尝试点击下一页
-### def convert_percent_to_float(percent_str)
-  将百分比字符串转为浮动类型（例如 '9.25%' 转为 9.25）
-### def convert_to_numeric(value)
-  将带有'万'和'亿'单位的字符串转换为相应的数值
-### def extract_stock_data(self, response)
-  获取 HTML 响应内容（部分），并保存我们需要的数据项
-### def save_to_csv(self, rank, name, code, price, percent, range, volume, amount, amplitude)
-  将指定的数据项保存到工作目录下的csv文件中
-### def save_to_mysql(self, rank, name, code, price, percent, my_range, volume, amount, amplitude)
-  将指定的数据项保存到数据库中，注意修改为你的用户名和密码！
+### StockSpider类中方法概览
+
+- `__init__(self)`: 初始化
+- `start_requests(self)`: 发送请求
+- `close_ad(self)`: 关闭弹出广告
+- `parse(self, response)`: 解析数据并分页
+- `convert_percent_to_float(percent_str)`: 转换百分比字符串为浮动类型
+- `convert_to_numeric(value)`: 转换单位为万/亿的字符串为数值
+- `extract_stock_data(self, response)`: 获取并保存 HTML 数据
+- `save_to_csv(self, rank, name, code, price, percent, range, volume, amount, amplitude)`: 保存数据到 CSV
+- `save_to_mysql(self, rank, name, code, price, percent, my_range, volume, amount, amplitude)`: 保存数据到 MySQL（请修改用户名和密码）
+
 
 # 🧠 Requirements
 ### Python 3 以上，安装了 Scrapy、Pymysql、Selenium 即可，但是以防万一，我还是在这里给出详细的版本信息：
