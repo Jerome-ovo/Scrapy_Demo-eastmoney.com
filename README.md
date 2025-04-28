@@ -2,7 +2,9 @@
 
 ## 😃😃使用Python的Scrapy库对于东方财经网的沪深京个股的当前信息进行爬取
 
-运行 *** stocks_info/stocks_info/spiders/__init__.py *** 即可运行整个项目。注意：它使用了动态加载技术，所以我们相应地需要使用 Selenium 库进行处理。
+运行 *** stocks_info/stocks_info/spiders/__init__.py *** 即可运行整个项目。
+
+注意：它使用了动态加载技术，所以我们相应地需要使用 Selenium 库进行处理。
 
 ## 😆😆Use the Scrapy library of Python to crawl the current information of individual stocks in Shanghai, Shenzhen and Beijing on the Oriental Finance Network.
 
