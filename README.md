@@ -9,8 +9,8 @@
 Run *** stocks_info/stocks_info/spiders/__init__.py *** to run the entire project
 
 ## Code Structure
-代码的整体结构如下：
-![image]()
+代码的整体结构如下图：
+![image](https://github.com/Jerome-ovo/Scrapy_Demo-eastmoney.com/blob/main/img/structure.png)
 
 # 🧠 Details
 下面对于项目细节进行说明：
@@ -43,7 +43,15 @@ Run *** stocks_info/stocks_info/spiders/__init__.py *** to run the entire projec
 | Pymysql        | 1.4.6   |
 | Selenium       | 4.31.0  |
 
-
+# 🧠 Result
+示例网站数据位置（东方财经网的沪深京个股）：
+![image](https://github.com/Jerome-ovo/Scrapy_Demo-eastmoney.com/blob/main/img/data_position.png)
+运行：
+![image](https://github.com/Jerome-ovo/Scrapy_Demo-eastmoney.com/blob/main/img/running.png)
+csv数据存储：
+![image](https://github.com/Jerome-ovo/Scrapy_Demo-eastmoney.com/blob/main/img/data_csv.png)
+sql数据存储：
+![image](https://github.com/Jerome-ovo/Scrapy_Demo-eastmoney.com/blob/main/img/data_sql.png)
 
 
 
